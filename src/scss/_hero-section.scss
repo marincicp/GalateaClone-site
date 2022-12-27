@@ -1,0 +1,175 @@
+.hero {
+  height: 100vh;
+  background: $col-light-grey;
+  margin-top: 5vh auto 0 auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &-img {
+    position: absolute;
+    transition: all 0.5s;
+
+    &-small {
+      left: 20%;
+      top: 5%;
+      transform-style: preserve-3d;
+      animation: moveSmall 1s;
+
+      @media only screen and (max-width: $bp-extra-large) {
+        left: 10%;
+        top: 5%;
+      }
+
+      @media only screen and (max-width: $bp-large-medium) {
+        left: 0%;
+        top: 0%;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        left: 0%;
+        top: 0%;
+      }
+
+      @media only screen and (max-width: $bp-medium-small) {
+        left: -10%;
+        top: -5%;
+      }
+      @media only screen and (max-width: 37.5em) {
+        left: -25%;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        left: -40%;
+        top: -10%;
+      }
+    }
+
+    &-medium {
+      left: 10%;
+      bottom: -10%;
+      transform-style: preserve-3d;
+      animation: moveMedium 1.5s;
+
+      @media only screen and (max-width: $bp-extra-large) {
+        left: 5%;
+        bottom: -10%;
+      }
+
+      @media only screen and (max-width: $bp-large-medium) {
+        left: -10%;
+        bottom: -10%;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        left: -20%;
+        bottom: 0%;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        left: -30%;
+        bottom: -25%;
+      }
+
+      @media only screen and (max-width: $bp-medium-small) {
+        left: -50%;
+        bottom: -40%;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        left: -65%;
+        bottom: -30%;
+      }
+      @media only screen and (max-width: 23.6em) {
+        left: -65%;
+        bottom: -50%;
+      }
+    }
+
+    &-big {
+      right: 10%;
+      top: 5%;
+      transform-style: preserve-3d;
+      animation: moveBig 1.5s;
+
+      @media only screen and (max-width: $bp-extra-large) {
+        right: 5%;
+        top: 5%;
+      }
+
+      @media only screen and (max-width: $bp-large-medium) {
+        right: -10%;
+        top: -10%;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        right: -10%;
+        top: 0%;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        right: -15%;
+        top: -20%;
+      }
+
+      @media only screen and (max-width: $bp-medium-small) {
+        right: -40%;
+        top: -30%;
+      }
+
+      @media only screen and (max-width: 37.5em) {
+        right: -45%;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        right: -75%;
+        top: -35%;
+      }
+
+      @media only screen and (max-width: 23.6em) {
+        right: -90%;
+      }
+    }
+  }
+
+  &-box {
+    position: relative;
+    // width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  &-para {
+    font-size: 2.4rem;
+    text-align: center;
+    color: $col-para;
+    line-height: 1.6;
+  }
+}
+
+.btn-howitworks:link,
+.btn-howitworks:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  background-color: #ff3000;
+  transition: all 0.3s;
+  letter-spacing: 1.5;
+}
+
+.btn-howitworks:hover {
+  background-color: $col-orange;
+  transform: scale(1.05);
+}
+
+.btn-howitworks:active {
+  transform: translateY(-5px);
+}

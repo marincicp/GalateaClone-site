@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Dancing+Script:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./src/images/logo.svg"
+    />
+    <link rel="stylesheet" href="./src/scss/_main.scss" />
+    <title>Galatea Clone</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <nav class="navbar">
+        <div class="navbar__group">
+          <img
+            src="./src/images/logo.svg"
+            alt="logo"
+            class="navbar__group-logo"
+          />
+          <ul class="navbar__group-links">
+            <li>
+              <a href="#" class="navbar__group-link">Home</a>
+            </li>
+            <li>
+              <a href="how-it-work.html" class="navbar__group-link"
+                >How it works</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__group">
+          <ul class="navbar__group-links">
+            <li>
+              <a href="#" class="navbar__group-link btn btn-cart">
+                <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+                <p>Cart</p>
+                <span class="cart-span">0</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="get-started.html"
+                class="navbar__group-link btn btn-getstarted"
+                >Get it started</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section class="hero">
+      <img
+        class="hero-img hero-img-small"
+        src="./src/images/hero-img-small.png"
+        alt="food"
+      />
+      <img
+        class="hero-img hero-img-medium"
+        src="./src/images/hero-img-medium.png"
+        alt="food"
+      />
+      <img
+        class="hero-img hero-img-big"
+        src="./src/images/hero-img-big.png"
+        alt="food"
+      />
+      <div class="hero-box">
+        <h1 class="heading-primary">
+          Healthy food <br />
+          for busy people
+        </h1>
+        <p class="hero-para">
+          Imagine devouring delicious, healthy meals daily <br />without so much
+          as lifting a pot.
+        </p>
+        <a href="how-it-work.html" class="btn btn-howitworks">How it works</a>
+      </div>
+    </section>
+
+    <section class="choose-section section">
+      <div class="choose">
+        <div class="choose__card">
+          <ion-icon
+            class="choose__card-icon"
+            name="clipboard-outline"
+          ></ion-icon>
+          <h3 class="heading-ternary">Choose your meals</h3>
+          <p class="choose__card-text">
+            Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
+            dapibus.
+          </p>
+        </div>
+        <div class="choose__card">
+          <ion-icon class="choose__card-icon" name="heart-outline"></ion-icon>
+          <h3 class="heading-ternary">Make it your own</h3>
+          <p class="choose__card-text">
+            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+            consequat vitae.
+          </p>
+        </div>
+        <div class="choose__card">
+          <ion-icon class="choose__card-icon" name="leaf-outline"></ion-icon>
+          <h3 class="heading-ternary">Fresh and affordable</h3>
+          <p class="choose__card-text">
+            Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-menu-section section">
+      <div class="our-menu-section-text">
+        <div class="our-menu-section-text-box">
+          <h4 class="heading-span">Our menu</h4>
+          <h2 class="heading-secondary">
+            Mix and match your meals to get a meal kit you’ll love.
+          </h2>
+          <p class="our-menu-section-text-box-para">
+            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+            consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+            viverra quis.
+          </p>
+          <a href="#" class="btn our-menu">View our menu</a>
+        </div>
+      </div>
+
+      <img class="salat" src="./src/images/salat.jpg" alt="salat photo" />
+    </section>
+
+    <section class="started-section section">
+      <div class="started-image">
+        <img
+          class="started-image-photo"
+          src="./src/images/started-img.png"
+          alt="food"
+        />
+      </div>
+
+      <div class="started-text">
+        <h4 class="heading-span started-text-span">started</h4>
+        <h2 class="heading-secondary started-text-heading">
+          Meal plans made for your lifestyle
+        </h2>
+        <p class="our-menu-section-text-box-para started-text-para">
+          Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+          consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+          viverra quis.
+        </p>
+        <ul class="started-text-list">
+          <li>
+            <span
+              ><ion-icon
+                class="started-text-list-icon"
+                name="bookmarks-outline"
+              ></ion-icon
+            ></span>
+            <p>Choose your meals</p>
+          </li>
+          <li>
+            <span
+              ><ion-icon
+                class="started-text-list-icon"
+                name="rocket-outline"
+              ></ion-icon
+            ></span>
+            <p>We cook & deliver</p>
+          </li>
+          <li>
+            <span
+              ><ion-icon
+                class="started-text-list-icon"
+                name="flame-outline"
+              ></ion-icon
+            ></span>
+            <p>Heat & eat</p>
+          </li>
+          <li>
+            <span
+              ><ion-icon
+                class="started-text-list-icon"
+                name="heart-outline"
+              ></ion-icon
+            ></span>
+            <p>Enjoy & Repeat</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="plans-section section">
+      <div class="plans">
+        <div class="plans__box">
+          <h4 class="heading-span started-text-span">Plans</h4>
+          <h2 class="heading-secondary started-text-heading">
+            Chef meal plans
+          </h2>
+          <p
+            class="our-menu-section-text-box-para started-text-para plans-para"
+          >
+            Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+            Curabitur ullamcorper ultricies nisi. Nam eget dui.
+          </p>
+        </div>
+
+        <div class="plans__cards item-box">
+          <div class="plans__cards-item single-item" data-id="4">
+            <img
+              class="plans__cards-item-image single-item-image"
+              src="./src/images/plan_1.jpg"
+              alt="food"
+            />
+
+            <div class="plans__cards-item-box">
+              <p class="plans__cards-item-price blue">
+                $ <span class="single-item-price">99.00</span>USD
+                <span class="per-week">per week</span>
+              </p>
+              <h5 class="plans__cards-item-heading single-item-name">
+                Lean & Clean Dinner
+              </h5>
+              <p class="plans__cards-item-para">
+                Maecenas tempus, tellus eget condimentum rhoncus, sem quam.
+              </p>
+              <button class="btn plans__cards-item-btn btn-blue btn-buy">
+                Choose plan
+              </button>
+            </div>
+          </div>
+          <div class="plans__cards-item single-item" data-id="5">
+            <img
+              class="plans__cards-item-image single-item-image"
+              src="./src/images/plan_2.jpg"
+              alt="food"
+            />
+
+            <div class="plans__cards-item-box">
+              <p class="plans__cards-item-price green">
+                $ <span class="price-span single-item-price">80.00</span> USD
+                <span class="per-week">per week</span>
+              </p>
+              <h5 class="plans__cards-item-heading single-item-name">
+                Balanced Living
+              </h5>
+              <p class="plans__cards-item-para">
+                Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+                augue.
+              </p>
+              <button class="btn plans__cards-item-btn btn-green btn-buy">
+                Choose plan
+              </button>
+            </div>
+          </div>
+          <div class="plans__cards-item single-item" data-id="6">
+            <img
+              class="plans__cards-item-image single-item-image"
+              src="./src/images/plan_3.jpg"
+              alt="food"
+            />
+
+            <div class="plans__cards-item-box">
+              <p class="plans__cards-item-price orange">
+                $ <span class="single-item-price">100.00</span>USD
+                <span class="per-week">per week</span>
+              </p>
+              <h5 class="plans__cards-item-heading single-item-name">
+                Classic Dinner
+              </h5>
+              <p class="plans__cards-item-para">
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              </p>
+              <button
+                class="btn plans__cards-item-btn plans__cards-item-btn btn-orange btn-buy"
+              >
+                Choose plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section section">
+      <div class="testimonials">
+        <div class="testimonials__box">
+          <h4 class="heading-span started-text-span">Testimonials</h4>
+          <h2 class="heading-secondary started-text-heading">
+            Feel good stories from our clients.
+          </h2>
+        </div>
+
+        <div class="testimonials__cards">
+          <div class="testimonials__cards-item">
+            <img
+              class="testimonials__cards-item-image"
+              src="./src/images/image_testimonial_1.jpg"
+              alt=""
+            />
+            <p class="testimonials__cards-item-name">Camilla Holt</p>
+            <p class="testimonials__cards-item-para">
+              Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+              Maecenas tempus
+            </p>
+
+            <img
+              class="testimonials__cards-item-icon"
+              src="./src/images/icon_testimonial.svg"
+              alt="icon"
+            />
+          </div>
+          <div class="testimonials__cards-item">
+            <img
+              class="testimonials__cards-item-image"
+              src="./src/images/image_testimonial_2.jpg"
+              alt=""
+            />
+            <p class="testimonials__cards-item-name">Miriam Davis</p>
+            <p class="testimonials__cards-item-para">
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa
+            </p>
+
+            <img
+              class="testimonials__cards-item-icon"
+              src="./src/images/icon_testimonial.svg"
+              alt="icon"
+            />
+          </div>
+          <div class="testimonials__cards-item">
+            <img
+              class="testimonials__cards-item-image"
+              src="./src/images/image_testimonial_3.jpg"
+              alt=""
+            />
+            <p class="testimonials__cards-item-name">Tracey Morris</p>
+            <p class="testimonials__cards-item-para">
+              Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+              Curabitur ullamcorper
+            </p>
+
+            <img
+              class="testimonials__cards-item-icon"
+              src="./src/images/icon_testimonial.svg"
+              alt="icon"
+            />
+          </div>
+          <div class="testimonials__cards-item">
+            <img
+              class="testimonials__cards-item-image"
+              src="./src/images/image_testimonial_4.jpg"
+              alt=""
+            />
+            <p class="testimonials__cards-item-name">Daniel Blake</p>
+            <p class="testimonials__cards-item-para">
+              Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
+              libero venenatis
+            </p>
+
+            <img
+              class="testimonials__cards-item-icon"
+              src="./src/images/icon_testimonial.svg"
+              alt="icon"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-work-section section">
+      <div class="how-it-work-box">
+        <h1 class="heading-primary how-it-work-box-heading">
+          Autopilot your diet,<br />
+          and start <span>feeling amazing.</span>
+        </h1>
+        <a href="how-it-work.html" class="btn btn-howitworks">How it works</a>
+      </div>
+    </section>
+
+    <section class="menu-section section">
+      <div class="menu">
+        <div class="menu__box">
+          <h4 class="heading-span started-text-span">Menu</h4>
+          <h2 class="heading-secondary started-text-heading">
+            Explore our menu
+          </h2>
+          <p class="our-menu-section-text-box-para started-text-para menu-para">
+            Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+            libero, sit amet adipiscing sem neque.
+          </p>
+        </div>
+
+        <div class="menu__cards item-box">
+          <div class="menu__cards-item single-item" data-id="1">
+            <img
+              class="plans__cards-item-image single-item-image"
+              src="./src/images/plan_1.jpg"
+              alt="food"
+            />
+
+            <div class="plans__cards-item-box">
+              <p class="plans__cards-item-price orange">
+                $ <span class="single-item-price">12.99</span> USD
+                <span class="price-before">18.99 USD</span>
+              </p>
+              <h5 class="plans__cards-item-heading single-item-name">
+                Steak Peppercorn
+              </h5>
+              <p class="plans__cards-item-para">
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                Cras dapibus
+              </p>
+              <button class="btn add-to-card-btn btn-buy">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="menu__cards-item single-item" data-id="2">
+            <img
+              class="plans__cards-item-image single-item-image"
+              src="./src/images/plan_2.jpg"
+              alt="food"
+            />
+
+            <div class="plans__cards-item-box">
+              <p class="plans__cards-item-price orange">
+                $ <span class="single-item-price">1.99</span> USD
+              </p>
+              <h5 class="plans__cards-item-heading single-item-name">
+                Take-Out Style
+              </h5>
+              <p class="plans__cards-item-para">
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                arcu. In enim
+              </p>
+              <button class="btn add-to-card-btn btn-buy">Add to cart</button>
+            </div>
+          </div>
+          <div class="menu__cards-item single-item" data-id="3">
+            <img
+              class="plans__cards-item-image single-item-image"
+              src="./src/images/plan_3.jpg"
+              alt="food"
+            />
+
+            <div class="plans__cards-item-box">
+              <p class="plans__cards-item-price orange">
+                $ <span class="single-item-price">7.99</span> USD
+              </p>
+              <h5 class="plans__cards-item-heading single-item-name">
+                Citrus-kissed Orange
+              </h5>
+              <p class="plans__cards-item-para">
+                Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+                augue.
+              </p>
+              <button class="btn add-to-card-btn btn-buy">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-now-section section">
+      <div class="join-now">
+        <div class="join-now-image-box">
+          <img
+            src="./src/images/join-banner.png"
+            alt="banner"
+            class="join-now-image-box-image"
+          />
+        </div>
+        <div class="join-now-text-box">
+          <h4 class="heading-span started-text-span join-now-text-box-span">
+            Join now
+          </h4>
+          <h2
+            class="heading-secondary started-text-heading join-now-text-box-heading"
+          >
+            Nutritionally designed meals you’ll crave
+          </h2>
+          <a href="#" class="btn join-now-text-box-btn">Get started</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="question-section section">
+      <div class="question-box">
+        <h5 class="heading-span question-box-span">tag</h5>
+        <h1 class="heading-primary question-box-heading">
+          Frequently Asked <br />
+          Questions
+        </h1>
+
+        <div class="question-box-accordion">
+          <div class="question-box-accordion-item">
+            <div class="question-box-accordion-item-question">
+              Can I choose my meals?
+              <ion-icon class="icona" name="caret-forward-outline"></ion-icon>
+            </div>
+            <div class="question-box-accordion-item-answer">
+              Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+              Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+              Maecenas tempus, tellus eget.
+            </div>
+          </div>
+          <div class="question-box-accordion-item">
+            <div class="question-box-accordion-item-question">
+              When will I receive my order?
+              <ion-icon class="icona" name="caret-forward-outline"></ion-icon>
+            </div>
+            <div class="question-box-accordion-item-answer">
+              Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+              eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+              eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+              feugiat a, tellus. Phasellus viverra nulla ut metus varius
+              laoreet.
+            </div>
+          </div>
+          <div class="question-box-accordion-item">
+            <div class="question-box-accordion-item-question">
+              Can I skip a delivery?
+              <ion-icon class="icona" name="caret-forward-outline"></ion-icon>
+            </div>
+            <div class="question-box-accordion-item-answer">
+              Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+              Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+              libero, sit amet adipiscing
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section section">
+      <div class="newsletter-box">
+        <h1 class="heading-primary newsletter-box-heading">
+          Join <span> our</span> newsletter
+        </h1>
+        <form class="newsletter-box-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="newsletter-box-input"
+          />
+          <button class="newsletter-box-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-box">
+        <div class="footer-box-logo">
+          <img
+            class="footer-box-logo-icon"
+            src="./src/images/logo_footer.svg"
+            alt="logo"
+          />
+
+          <p>Create by Petar Marinčić , 2022</p>
+          <a href="https://galatea.webflow.io" target="_blank"
+            >Inspired by Galatea
+            <ion-icon name="arrow-forward-outline"></ion-icon
+          ></a>
+        </div>
+
+        <div class="footer-box-social">
+          <ion-icon
+            class="footer-box-social-logo"
+            name="logo-facebook"
+          ></ion-icon>
+          <ion-icon
+            class="footer-box-social-logo"
+            name="logo-instagram"
+          ></ion-icon>
+          <ion-icon
+            class="footer-box-social-logo"
+            name="logo-twitter"
+          ></ion-icon>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cart-box">
+      <div class="cart-box-top">
+        <h3 class="cart-box-top-heading">Your cart</h3>
+        <button class="cart-box-top-btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="cart-box-middle">
+        <div class="cart-box-middle-item">
+          <p class="cart-box-middle-item-empty-cart">
+            There are not items in your cart.
+          </p>
+
+          <!-- <img
+            class="cart-box-middle-item-image"
+            src="./src/images/menu-img2.jpg"
+            alt="image"
+          />
+          <div class="cart-box-middle-item-info">
+            <h4>Lean & Clean Dinner</h4>
+            <p>$ <span>99.00</span></p>
+            <button class="remove-btn">Remove</button>
+          </div>
+          <input class="quantity" type="number" value="1" min="1" data-id="1" /> -->
+        </div>
+      </div>
+      <div class="cart-box-low">
+        <div class="cart-box-low-total">
+          <div class="cart-box-low-total-box">
+            <div class="cart-box-low-total-box-text">Subtotal</div>
+            <div class="cart-box-low-total-box-price">
+              $ <span>0.00</span> USD
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-box-low-confrim">
+          <button class="cart-box-low-confrim-btn">Confrim</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script> -->
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+.menu {
+  margin: 0 auto 2rem auto;
+  max-width: 140rem;
+  height: 90rem;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-medium-small) {
+    height: fit-content;
+  }
+
+  &-para {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  &__box {
+    margin: 5rem auto;
+    width: 50%;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 80%;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5rem;
+    max-width: 100%;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      grid-template-columns: 1fr;
+
+      justify-items: center;
+      align-items: center;
+      row-gap: 5rem;
+    }
+
+    &-item {
+      border: 2px solid #ddd;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
+      justify-self: stretch;
+
+      @media only screen and (max-width: $bp-medium-small) {
+        width: 60%;
+        justify-self: center;
+      }
+
+      &-box {
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      &-image {
+        width: 100%;
+        height: 20rem;
+
+        cursor: pointer;
+        transition: all 0.5s;
+        object-fit: cover;
+        display: inline-block;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      &-price {
+        font-size: 3.6rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: $col-orange;
+      }
+
+      &-heading {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: #000;
+        transition: all 0.5s;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      &-para {
+        color: $col-para;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      &-btn {
+        &:link,
+        &:visited {
+          display: inline-block;
+          width: 40%;
+          margin: 0 auto 2rem auto;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: all 0.4s;
+          backface-visibility: hidden;
+        }
+
+        &:hover {
+          transform: scale(1.02);
+        }
+        &:active {
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+.add-to-card-btn {
+  background-color: $col-light-grey;
+  color: #000;
+  width: 50%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $col-green;
+    transform: scale(1.05);
+    color: #fff;
+  }
+}
+
+.price-before {
+  color: #999;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    color: #000;
+    width: 110%;
+    height: 100%;
+    border-top: 1px solid #999;
+    top: 100%;
+    left: 50%;
+    display: inline-block;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+// .price {
+//   font-size: 1.4rem;
+//   color: $col-light-grey;
+// }
+
+// .blue {
+//   color: hsla(186.09625668449198, 80.95%, 45.29%, 1);
+// }
+
+// .green {
+//   color: $col-green;
+// }
+
+// .orange {
+//   color: $col-orange;
+// }
+
+// .btn-blue {
+//   background-color: hsla(186.09625668449198, 80.95%, 45.29%, 1);
+// }
+
+// .btn-green {
+//   background-color: $col-green;
+// }
+
+// .btn-orange {
+//   background-color: $col-orange;
+// }

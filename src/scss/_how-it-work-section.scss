@@ -1,0 +1,37 @@
+.how-it-work-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/howitwork.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  margin: 0 auto 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s ease-in-out;
+}
+
+.how-it-work-box {
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-direction: column;
+
+  @media only screen and (max-width: $bp-small) {
+    max-width: 100%;
+  }
+
+  &-heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+
+    & span {
+      font-family: "Dancing Script", cursive;
+      margin-left: 2rem;
+      font-size: 8.4rem;
+    }
+  }
+}

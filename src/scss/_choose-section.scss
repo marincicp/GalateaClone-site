@@ -1,0 +1,103 @@
+.choose-section {
+  background-image: url("https://assets.website-files.com/5f8777f972356e39b046d89f/5f87bedf96a9c74681bb8bb6_wave_white_down_1.svg");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 50vh;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+
+  z-index: 20;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    height: fit-content;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.choose {
+  background-color: #fff;
+  width: 130rem;
+  margin: 0 auto;
+  padding: 15rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 100%;
+    font-size: 50%;
+    padding: 0;
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    width: 30%;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 1rem;
+      gap: 1rem;
+      font-size: 50%;
+      justify-content: flex-start;
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 50%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 60%;
+    }
+
+    &-icon {
+      font-size: 3rem;
+      position: relative;
+      padding: 4rem;
+      color: #ff3000;
+      font-weight: 700;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        padding-bottom: 100%;
+        width: 100%;
+        background-color: $col-light-grey;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      color: $col-para;
+      line-height: 1.6;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+}

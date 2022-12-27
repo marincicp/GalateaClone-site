@@ -1,0 +1,119 @@
+.our-menu-section {
+  display: flex;
+  height: 50rem;
+  margin: 2rem auto;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-extra-large) {
+    left: -5%;
+    bottom: 0%;
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-text {
+    background-color: antiquewhite;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $col-green;
+
+    @media only screen and (max-width: $bp-large-medium) {
+      width: 100%;
+      padding: 3rem 4rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 100%;
+      padding: 3rem 4rem;
+    }
+
+    &-box {
+      width: 60%;
+      // padding: 8rem 20rem;
+      // padding: 2rem 8rem;
+      @media only screen and (max-width: $bp-large-medium) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: $bp-medium-small) {
+        width: 85%;
+        padding: 2rem;
+        margin: 4rem 0;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+        padding: 3rem 4rem;
+      }
+
+      &-para {
+        margin: 3rem 0;
+        font-size: 1.8rem;
+        color: #fff;
+        line-height: 1.6;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.our-menu:link,
+.our-menu:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 40%;
+  background-color: #fb8c23;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  letter-spacing: 1.5;
+
+  @media only screen and (max-width: $bp-extra-large) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: $bp-large-medium) {
+    width: 40%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    width: 35%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 40%;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    width: fit-content;
+  }
+}
+
+.our-menu:hover {
+  background-color: #ff3000;
+  transform: scale(1.05);
+}
+.our-menu:active {
+  transform: translateY(-5px);
+}
+
+.salat {
+  width: 50%;
+  object-fit: cover;
+
+  @media only screen and (max-width: $bp-medium-small) {
+    width: 100%;
+    height: 50rem;
+  }
+}

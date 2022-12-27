@@ -1,0 +1,182 @@
+.plans {
+  margin: 0 auto 2rem auto;
+  max-width: 140rem;
+  height: 90rem;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-medium-small) {
+    height: fit-content;
+  }
+
+  &-para {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  &__box {
+    margin: 5rem auto;
+    width: 50%;
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 80%;
+      font-size: 2.4rem;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5rem;
+    // justify-content: space-between;
+    // align-items: center;
+    max-width: 100%;
+
+    @media only screen and (max-width: $bp-large) {
+      column-gap: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      grid-template-columns: 1fr;
+      // grid-template-rows: 1fr 1fr 1fr;
+      width: 100%;
+      justify-items: center;
+      row-gap: 5rem;
+    }
+
+    &-item {
+      border: 2px solid #ddd;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
+      height: 55rem;
+
+      @media only screen and (max-width: $bp-medium-small) {
+        width: 60%;
+      }
+
+      @media only screen and (max-width: 37.5em) {
+        width: 70%;
+        height: fit-content;
+      }
+
+      &-box {
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      &-image {
+        width: 100%;
+        height: 20rem;
+
+        cursor: pointer;
+        transition: all 0.5s;
+        object-fit: cover;
+        display: inline-block;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      &-price {
+        font-size: 3.6rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        @media only screen and (max-width: $bp-large) {
+          font-size: 2.8rem;
+        }
+
+        & .per-week {
+          color: #999;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+        }
+      }
+
+      &-heading {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: #000;
+        transition: all 0.5s;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-large) {
+          font-size: 3rem;
+        }
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      &-para {
+        color: $col-para;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+
+        @media only screen and (max-width: $bp-large) {
+          font-size: 1.8rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-small) {
+          padding: 0 3rem;
+        }
+      }
+
+      &-btn {
+        display: inline-block;
+        width: fit-content;
+        margin: 0 auto 2rem auto;
+        text-align: center;
+        text-transform: uppercase;
+
+        transition: all 0.4s;
+        backface-visibility: hidden;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active {
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+// .per-week {
+//   font-size: 1.4rem;
+//   color: $col-light-grey;
+// }
+
+.blue {
+  color: hsla(186.09625668449198, 80.95%, 45.29%, 1);
+}
+
+.green {
+  color: $col-green;
+}
+
+.orange {
+  color: $col-orange;
+}
+
+.btn-blue {
+  background-color: hsla(186.09625668449198, 80.95%, 45.29%, 1);
+}
+
+.btn-green {
+  background-color: $col-green;
+}
+
+.btn-orange {
+  background-color: $col-orange;
+}

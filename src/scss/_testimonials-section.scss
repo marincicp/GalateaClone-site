@@ -1,0 +1,103 @@
+.testimonials-section {
+  background-color: $col-light-grey;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  transition: all 0.5s ease-in-out;
+
+  @media only screen and (max-width: $bp-medium-small) {
+    height: fit-content;
+  }
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem auto;
+  max-width: 140rem;
+  height: 90rem;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-medium-small) {
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    height: fit-content;
+  }
+
+  &__box {
+    margin: 5rem auto;
+    width: 50%;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 80%;
+    }
+  }
+
+  &__cards {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 3rem;
+    margin: 5rem 0;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 6rem;
+      column-gap: 2rem;
+      padding: 0 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-template-columns: 1fr;
+      padding: 0 6rem;
+    }
+
+    &-item {
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 1rem;
+      height: 25rem;
+      box-shadow: 0 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2rem;
+      padding: 3rem;
+
+      &-image {
+        margin-top: -6rem;
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+      }
+
+      &-name {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: #000;
+      }
+
+      &-para {
+        color: #615e5d;
+        font-size: 2rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+          padding: 0 4rem;
+        }
+      }
+      &-icon {
+        height: 2rem;
+        width: 2rem;
+        display: inline-block;
+      }
+    }
+  }
+}

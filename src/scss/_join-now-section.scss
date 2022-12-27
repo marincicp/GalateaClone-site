@@ -1,0 +1,98 @@
+.join-now {
+  max-width: 150rem;
+  margin: 0 auto;
+  height: 40vh;
+  border-radius: 1rem;
+
+  background-color: $col-orange;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-smallest) {
+    height: 45vh;
+  }
+
+  &-image-box {
+    width: 50%;
+    height: 100%;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 35%;
+    }
+
+    &-image {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+
+      @media only screen and (max-width: $bp-medium-small) {
+        object-fit: none;
+        object-position: right;
+
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-text-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+    width: 50%;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      width: 65%;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 80%;
+      padding: 2rem;
+    }
+
+    &-span {
+      color: #fff;
+    }
+    &-heading {
+      color: #fff;
+      margin-top: -1rem;
+    }
+
+    &-btn {
+      &:link,
+      &:visited {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1rem;
+        border-radius: 4rem;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #fff;
+        width: 30%;
+        margin-top: 3rem;
+        transition: all 0.4s;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $col-green;
+        color: #fff;
+
+        transform: scale(1.05);
+      }
+    }
+  }
+}

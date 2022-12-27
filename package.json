@@ -1,0 +1,18 @@
+{
+  "name": "galatea",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html ",
+    "build": "parcel build index.html get-started.html how-it-work.html --dist-dir ./dist"
+  },
+  "author": "Petar",
+  "license": "ISC",
+  "devDependencies": {
+    "-": "^0.0.1",
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "sass": "^1.56.0"
+  }
+}
